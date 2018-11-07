@@ -1,0 +1,13 @@
+{
+  "Version": "2008-10-17",
+  "Statement": [
+      {
+          "Effect": "Allow",
+          "Principal": {
+              "AWS": "arn:aws:iam::621785183737:role/ServerlessOperator"
+          },
+          "Action": "s3:GetObject",
+          "Resource": "arn:aws:s3:::demo.weijing329.studio/*"
+      }
+  ]
+}
