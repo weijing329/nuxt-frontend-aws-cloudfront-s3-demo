@@ -16,7 +16,7 @@
     "s3EnableWebsite": "aws s3 website s3://demo.weijing329.studio --index-document",
     "s3EnableVersioning": "aws s3api put-bucket-versioning --bucket demo.weijing329.studio --versioning-configuration Status=Enabled",
     "s3UpdatePolicy": "aws s3api put-bucket-policy --bucket demo.weijing329.studio --policy file://policy.json",
-    "s3UploadSite": "aws s3 cp dist s3://demo.weijing329.studio --recursive --cache-control max-age=86400",
+    "s3UploadSite": "aws s3 cp dist s3://demo.weijing329.studio --recursive",
     "publish": "npm run generate && npm run s3UploadSite"
   },
   "dependencies": {
