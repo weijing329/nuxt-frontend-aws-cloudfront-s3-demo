@@ -45,9 +45,10 @@ export default {
   width: 300px;
 }
 .left {
-  text-align: left
+  text-align: left;
+  padding: 7px;
 }
 .right {
-  text-align: right
+  text-align: right;
 }
 </style>
