@@ -1,8 +1,15 @@
-# nuxt-static-cloudfront-s3-deploy
+# CloudFront static content delivery from S3 website
 
-> Nuxt.js project
+> This project demostrate how to setup the frontend part of an user IP detection service on AWS serverless cloud environment.
 
-## Build Setup
+## AWS S3 bucket initialization
+
+```bash
+
+```
+
+
+## Build and upload static website 
 
 ``` bash
 # install dependencies
@@ -19,5 +26,5 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+## AWS CloudFront configuration
 
