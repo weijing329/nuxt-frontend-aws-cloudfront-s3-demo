@@ -6,11 +6,31 @@ The website frontend is a Single Page Application (SPA) developed with Nuxt.js (
 
 Live Demo: https://demo.weijing329.studio
 
-## Data Flow Diagram
-<!-- ```mermaid
-``` -->
+## Frontend Process Flow Diagram
+```mermaid
+sequenceDiagram
+participant W as Web Browser
+participant I as index.html
+participant X as SPA (JavaScript)
+participant B as Backend
 
-## Run locally
+W->>I: Open web page
+I->>X: Launch SPA
+activate X
+X->>X: Initialize client-side view model
+X-->>W: Update DOM with PreRender content
+X->>B: Fetch IP information 
+activate B
+B->>B: Prepare IP information
+B-->>X: Return IP information
+deactivate B
+X->>X: Update client-side view model
+X-->>W: Update DOM with IP information
+
+deactivate X
+```
+
+## Run frontend application locally
 
 ``` bash
 # Change working directory to this project folder
